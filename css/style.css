@@ -1,0 +1,77 @@
+/* CSS for styling */
+.container-fluid {
+    margin-top: 20px; /* Add margin for better spacing */
+}
+
+.btn-green {
+    background-color: #28a745; /* Set background color for green button */
+    color: #fff; /* Set text color for green button */
+}
+
+.button {
+    display: flex;
+    flex-direction: column; /* Arrange button content vertically */
+    align-items: center; /* Center button content horizontally */
+    margin-top: 20px; /* Add margin for better spacing */
+}
+
+.radio-inputs {
+    display: flex;
+    justify-content: center; /* Center radio buttons horizontally */
+}
+
+.radio-label {
+    margin-left: 5px; /* Add margin to radio labels */
+}
+
+/* Styling for switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #da2d2d;
+    border-radius: 17px;
+    transition: background-color 0.3s;
+}
+
+.dot {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    background-color: rgb(106, 72, 228);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input:checked + .light {
+    background-color: #52f321;
+}
+
+input:checked + .light + .dot {
+    transform: translateX(26px);
+}
+
+/* Styling for line */
+.line {
+    border: none;
+    border-top: 1px solid #000;
+    width: 100%;
+    margin: 0;
+}
